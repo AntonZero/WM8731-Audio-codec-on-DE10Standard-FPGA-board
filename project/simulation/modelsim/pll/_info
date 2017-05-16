@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/intelFPGA_lite/projects/project1/simulation/modelsim
+vpll
+Z1 !s110 1493600649
+!i10b 1
+!s100 Af4Mdj5`A9^6IE`j7YY?_0
+ICgVO9DQN8AWGATFiBe4ZD0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1493598524
+8d:/intelfpga_lite/projects/project1/db/ip/pll/pll.v
+Fd:/intelfpga_lite/projects/project1/db/ip/pll/pll.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1493600649.000000
+!s107 d:/intelfpga_lite/projects/project1/db/ip/pll/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pll|+incdir+d:/intelfpga_lite/projects/project1/db/ip/pll|d:/intelfpga_lite/projects/project1/db/ip/pll/pll.v|
+!i113 1
+Z5 o-vlog01compat -work pll
+!s92 -vlog01compat -work pll +incdir+d:/intelfpga_lite/projects/project1/db/ip/pll
+Z6 tCvgOpt 0
+vpll_onchip_memory2_0
+R1
+!i10b 1
+!s100 c2AGTfn=8bJBUOCDM=>Xz1
+IFXLRfb84A7I`OIPlcEbNZ1
+R2
+R0
+Z7 w1493598525
+8d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_onchip_memory2_0.v
+Fd:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_onchip_memory2_0.v
+L0 21
+R3
+r1
+!s85 0
+31
+R4
+!s107 d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_onchip_memory2_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pll|+incdir+d:/intelfpga_lite/projects/project1/db/ip/pll/submodules|d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_onchip_memory2_0.v|
+!i113 1
+R5
+Z8 !s92 -vlog01compat -work pll +incdir+d:/intelfpga_lite/projects/project1/db/ip/pll/submodules
+R6
+vpll_pll_0
+R1
+!i10b 1
+!s100 alK_C@DmXk][>TcgIMdhG2
+I0JXgEG;0>IOD57KTTgT:f0
+R2
+R0
+R7
+8d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_pll_0.v
+Fd:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_pll_0.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_pll_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pll|+incdir+d:/intelfpga_lite/projects/project1/db/ip/pll/submodules|d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_pll_0.v|
+!i113 1
+R5
+R8
+R6

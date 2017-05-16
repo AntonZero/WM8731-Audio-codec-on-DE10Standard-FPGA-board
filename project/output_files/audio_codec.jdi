@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="b3c8308bff1609c05f2a"/>
+  </project>
+  <file_info>
+    <file device="5CSXFC6D6F31C6" path="audio_codec.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="pll:u0" name="u0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME pll HAS_SOPCINFO 1 GENERATION_ID 1494510412"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

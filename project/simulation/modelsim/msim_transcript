@@ -1,0 +1,268 @@
+# Reading D:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do audio_codec_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlib pll
+# ** Warning: (vlib-34) Library already exists at "pll".
+# vmap pll pll
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap pll pll 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work pll +incdir+d:/intelfpga_lite/projects/project1/db/ip/pll {d:/intelfpga_lite/projects/project1/db/ip/pll/pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:04:09 on May 01,2017
+# vlog -reportprogress 300 -vlog01compat -work pll "+incdir+d:/intelfpga_lite/projects/project1/db/ip/pll" d:/intelfpga_lite/projects/project1/db/ip/pll/pll.v 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 03:04:09 on May 01,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pll +incdir+d:/intelfpga_lite/projects/project1/db/ip/pll/submodules {d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_onchip_memory2_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:04:09 on May 01,2017
+# vlog -reportprogress 300 -vlog01compat -work pll "+incdir+d:/intelfpga_lite/projects/project1/db/ip/pll/submodules" d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_onchip_memory2_0.v 
+# -- Compiling module pll_onchip_memory2_0
+# 
+# Top level modules:
+# 	pll_onchip_memory2_0
+# End time: 03:04:09 on May 01,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pll +incdir+d:/intelfpga_lite/projects/project1/db/ip/pll/submodules {d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_pll_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:04:09 on May 01,2017
+# vlog -reportprogress 300 -vlog01compat -work pll "+incdir+d:/intelfpga_lite/projects/project1/db/ip/pll/submodules" d:/intelfpga_lite/projects/project1/db/ip/pll/submodules/pll_pll_0.v 
+# -- Compiling module pll_pll_0
+# 
+# Top level modules:
+# 	pll_pll_0
+# End time: 03:04:09 on May 01,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/intelFPGA_lite/projects/project1/audio_codec.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:04:09 on May 01,2017
+# vcom -reportprogress 300 -93 -work work D:/intelFPGA_lite/projects/project1/audio_codec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity audio_codec
+# -- Compiling architecture main of audio_codec
+# End time: 03:04:10 on May 01,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/intelFPGA_lite/projects/project1/i2c.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:04:10 on May 01,2017
+# vcom -reportprogress 300 -93 -work work D:/intelFPGA_lite/projects/project1/i2c.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity i2c
+# -- Compiling architecture main of i2c
+# End time: 03:04:10 on May 01,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/intelFPGA_lite/projects/project1/aud_gen.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:04:10 on May 01,2017
+# vcom -reportprogress 300 -93 -work work D:/intelFPGA_lite/projects/project1/aud_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity aud_gen
+# -- Compiling architecture main of aud_gen
+# End time: 03:04:10 on May 01,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.audio_codec
+# vsim -gui -l msim_transcript work.audio_codec 
+# Start time: 03:04:27 on May 01,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.audio_codec(main)
+# ** Warning: (vsim-3473) Component instance "u0 : pll" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /audio_codec File: D:/intelFPGA_lite/projects/project1/audio_codec.vhd
+# Loading work.aud_gen(main)
+# Loading work.i2c(main)
+add wave -position insertpoint  \
+sim:/audio_codec/AUD_BCLK \
+sim:/audio_codec/AUD_XCK \
+sim:/audio_codec/AUD_ADCLRCK \
+sim:/audio_codec/AUD_ADCDAT \
+sim:/audio_codec/AUD_DACLRCK \
+sim:/audio_codec/AUD_DACDAT \
+sim:/audio_codec/clock_50 \
+sim:/audio_codec/key \
+sim:/audio_codec/ledr \
+sim:/audio_codec/sw \
+sim:/audio_codec/FPGA_I2C_SCLK \
+sim:/audio_codec/FPGA_I2C_SDAT \
+sim:/audio_codec/bitprsc \
+sim:/audio_codec/aud_mono \
+sim:/audio_codec/read_addr \
+sim:/audio_codec/ROM_ADDR \
+sim:/audio_codec/ROM_OUT \
+sim:/audio_codec/clock_12pll \
+sim:/audio_codec/WM_i2c_busy \
+sim:/audio_codec/WM_i2c_done \
+sim:/audio_codec/WM_i2c_send_flag \
+sim:/audio_codec/WM_i2c_data \
+sim:/audio_codec/DA_CLR
+force -freeze sim:/audio_codec/clock_12pll 1 0, 0 {41500 ps} -r {83 ns}
+force -freeze sim:/audio_codec/aud_mono 00000000000000000000000000000000 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/audio_codec/sw 1111111111 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 03:06:58 on May 01,2017, Elapsed time: 0:02:31
+# Errors: 0, Warnings: 1

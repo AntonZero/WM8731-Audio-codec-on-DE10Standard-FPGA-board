@@ -1,0 +1,3 @@
+v1
+GXB_MERGING,PLL Output Counter,289209,pll:u0|pll_pll_0:pll_0|altera_pll:altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER,pll:u0|pll_pll_0:pll_0|altera_pll:altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER,
+GXB_MERGING,Clock enable block,27579,pll:u0|pll_pll_0:pll_0|altera_pll:altera_pll_i|outclk_wire[0]~CLKENA0,pll:u0|pll_pll_0:pll_0|altera_pll:altera_pll_i|outclk_wire[1]~CLKENA0,

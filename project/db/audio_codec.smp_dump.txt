@@ -1,0 +1,12 @@
+
+State Machine - |audio_codec|i2c:WM8731|i2c_fsm
+Name i2c_fsm.st8 i2c_fsm.st7 i2c_fsm.st6 i2c_fsm.st5 i2c_fsm.st4 i2c_fsm.st3 i2c_fsm.st2 i2c_fsm.st1 i2c_fsm.st0 
+i2c_fsm.st0 0 0 0 0 0 0 0 0 0 
+i2c_fsm.st1 0 0 0 0 0 0 0 1 1 
+i2c_fsm.st2 0 0 0 0 0 0 1 0 1 
+i2c_fsm.st3 0 0 0 0 0 1 0 0 1 
+i2c_fsm.st4 0 0 0 0 1 0 0 0 1 
+i2c_fsm.st5 0 0 0 1 0 0 0 0 1 
+i2c_fsm.st6 0 0 1 0 0 0 0 0 1 
+i2c_fsm.st7 0 1 0 0 0 0 0 0 1 
+i2c_fsm.st8 1 0 0 0 0 0 0 0 1 

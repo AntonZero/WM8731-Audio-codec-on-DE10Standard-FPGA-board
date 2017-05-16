@@ -1,0 +1,51 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity  aud_gen is
+port (
+	aud_clock_12: in std_logic;
+	aud_bk: out std_logic;
+	aud_dalr: out std_logic;
+	aud_dadat: out std_logic
+)
+end aud_gen;
+
+architecture main of aud_gen is
+
+signal tone_pscl: integer range 0 to 30000:=0; 
+signal da_data : std_logic:='0';
+signal aud_prscl: integer range 0 to 300:=0;
+signal clk_en: std_logic:='0';
+begin
+
+
+process(aud_clock_12)
+begin
+
+if falling_edge(aud_clock_12) then
+
+aud_dalr<=clk_en;
+aud_dadat<=da_data;
+	if(aud_prscl<249)then
+		aud_prscl<=aud_prscl+1;
+		clk_en<='0';
+		else
+		aud_prscl<=0;
+		clk_en<='1';
+	end if;
+	
+	if(tone_pscl<27272)then
+		tone_pscl<=tone_pscl+1;
+		else
+		da_data<=not da_data;
+		tone_pscl<=0;
+	end if;
+	
+	
+
+end if;
+
+end process;
+end main

@@ -1,0 +1,48 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\intelFPGA_lite\projects\project1\pll.qsys --block-symbol-file --output-directory=D:\intelFPGA_lite\projects\project1 --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading project1/pll.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pll_0 [altera_pll 16.1]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: pll.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: pll.pll_0: Able to implement PLL with user settings
+Warning: pll.: You have exported the interface onchip_memory2_0.reset1 but not its associated clock interface.  Export the driver of onchip_memory2_0.clk1
+Warning: pll.: You have exported the interface onchip_memory2_0.s1 but not its associated clock interface.  Export the driver of onchip_memory2_0.clk1
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\intelFPGA_lite\projects\project1\pll.qsys --synthesis=VHDL --output-directory=D:\intelFPGA_lite\projects\project1\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading project1/pll.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pll_0 [altera_pll 16.1]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: pll.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: pll.pll_0: Able to implement PLL with user settings
+Warning: pll.: You have exported the interface onchip_memory2_0.reset1 but not its associated clock interface.  Export the driver of onchip_memory2_0.clk1
+Warning: pll.: You have exported the interface onchip_memory2_0.s1 but not its associated clock interface.  Export the driver of onchip_memory2_0.clk1
+Info: pll: Generating pll "pll" for QUARTUS_SYNTH
+Info: onchip_memory2_0: Starting RTL generation for module 'pll_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec D:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=pll_onchip_memory2_0 --dir=C:/Users/Nano/AppData/Local/Temp/alt7286_5897812544595746470.dir/0001_onchip_memory2_0_gen/ --quartus_dir=D:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/Nano/AppData/Local/Temp/alt7286_5897812544595746470.dir/0001_onchip_memory2_0_gen//pll_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'pll_onchip_memory2_0'
+Info: onchip_memory2_0: "pll" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: pll_0: "pll" instantiated altera_pll "pll_0"
+Info: pll: Done "pll" with 3 modules, 4 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,71 @@
+MIF/HEX Update report for audio_codec
+Thu Apr 27 02:20:10 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------+
+; MIF/HEX Update Summary                                    ;
++-----------------------+-----------------------------------+
+; MIF/HEX Update Status ; Failed - Thu Apr 27 02:20:10 2017 ;
+; Revision Name         ; audio_codec                       ;
+; Top-level Entity Name ; audio_codec                       ;
+; Family                ; Cyclone V                         ;
+; Device                ; 5CSXFC6D6F31C6                    ;
++-----------------------+-----------------------------------+
+
+
++--------------------------------+
+; MIF/HEX Update Processed Files ;
++--------------------------------+
+; File Name                      ;
++--------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime MIF/HEX Update
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Thu Apr 27 02:20:08 2017
+Info: Command: quartus_cdb audio_codec -c audio_codec --update_mif
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Critical Warning (127002): Can't read Memory Initialization File or Hexadecimal (Intel-Format) File D:/intelFPGA_lite/projects/project1/mono8k.hex -- setting all initial values to 0
+Error (39022): Found no valid Memory Initialization File to process
+Error: Quartus Prime MIF/HEX Update was unsuccessful. 1 error, 2 warnings
+    Error: Peak virtual memory: 737 megabytes
+    Error: Processing ended: Thu Apr 27 02:20:10 2017
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:02
+
+

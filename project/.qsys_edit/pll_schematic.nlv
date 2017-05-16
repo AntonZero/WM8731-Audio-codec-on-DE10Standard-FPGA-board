@@ -1,0 +1,16 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst pll.pll_0 -pg 1 -lvl 2 -y 30
+preplace inst pll.clk_0 -pg 1 -lvl 1 -y 30
+preplace inst pll.onchip_memory2_0 -pg 1 -lvl 2 -y 110
+preplace inst pll -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc POINT_TO_POINT<net_container>pll</net_container>(MASTER)clk_0.clk_reset,(SLAVE)pll_0.reset) 1 1 1 N
+preplace netloc EXPORT<net_container>pll</net_container>(SLAVE)onchip_memory2_0.s1,(SLAVE)pll.onchip_memory2_0_s1) 1 0 2 NJ 160 NJ
+preplace netloc EXPORT<net_container>pll</net_container>(SLAVE)pll.onchip_memory2_0_reset1,(SLAVE)onchip_memory2_0.reset1) 1 0 2 NJ 140 NJ
+preplace netloc POINT_TO_POINT<net_container>pll</net_container>(SLAVE)pll_0.refclk,(MASTER)clk_0.clk) 1 1 1 N
+preplace netloc POINT_TO_POINT<net_container>pll</net_container>(SLAVE)onchip_memory2_0.clk1,(MASTER)pll_0.outclk1) 1 1 2 360 100 580
+preplace netloc EXPORT<net_container>pll</net_container>(SLAVE)clk_0.clk_in,(SLAVE)pll.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>pll</net_container>(SLAVE)pll.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>pll</net_container>(MASTER)pll_0.outclk0,(MASTER)pll.clock_12) 1 2 1 N
+levelinfo -pg 1 0 150 680
+levelinfo -hier pll 160 190 450 600

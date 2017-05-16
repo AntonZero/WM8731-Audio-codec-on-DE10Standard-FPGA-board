@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+architecture audio_codec is
+port (
+
+
+----------WM8731 pins-----
+AUD_BCLK: out std_logic;
+AUD_XCK: out std_logic;
+AUD_ADCLRCK:  in std_logic;
+AUD_ADCDAT: in std_logic;
+AUD_DACLRCK: out std_logic;
+AUD_DACDAT: out std_logic;
+
+---------FPGA pins-----
+
+clock_50: in std_logic;
+key: in std_logic_vector(3 downto 0);
+ledr: out std_logic_vector(9 downto 0);
+sw: in std_logic_vector(9 downto 0);
+FPGA_I2C_SCLK: out std_logic;
+FPGA_I2C_SDAT: inout std_logic
+
+);
+
+end audio_codec;

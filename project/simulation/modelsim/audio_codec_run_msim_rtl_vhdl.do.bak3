@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/intelFPGA_lite/projects/project1/audio_codec.vhd}
+vcom -93 -work work {D:/intelFPGA_lite/projects/project1/i2c.vhd}
+
